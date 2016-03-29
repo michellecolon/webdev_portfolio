@@ -1,4 +1,21 @@
+@import 'normalize'
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper_padding {
+  padding: 4em 0;
+}
 
 .clearfix:before,
 .clearfix:after {
@@ -10,25 +27,64 @@
   clear: both;
 }
 
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  color: #424652;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.375em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p, li {
+  font-size: 1.1em;
+  line-height: 1.75;  
+}
+
+p, ul, ol {
+  margin: 0 0 1.6em 0;
+}
+
 #main_navigation {
   padding: 2.5em 5%
-  border-bottom: 10px solid #E9E9E9;
+  border: 1px solid #E9E9E9;
+  padding-top: 1em;
 }
 
 .name {
   font-weight: 700;
-  font-size: .7em;
+  font-size: .8em;
   text-transform: uppercase;
   border: 2px solid #E9E9E9;
-  padding: 0.75em 1em;
+  padding: 1em;
   text-decoration: none;
   color: #424652
   float: left;
+  letter-spacing: 4px;
 }
 
 nav {
   float: right;
-  padding-top: .9rem;
+
 }
 
 nav a {
@@ -37,3 +93,6 @@ nav a {
   margin: 0 1em;
   font-size: 1em;
 }
+
+@import 'welcome'
+
