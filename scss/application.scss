@@ -68,6 +68,7 @@ h5 {
 
 h6 {
   font-size: 1em;
+  text-align: center;
 }
 
 p, li {
@@ -78,6 +79,7 @@ p, li {
 p, ul, ol {
   margin: 0 0 1.6em 0;
 }
+
 
 hr {
     width: 3em;
@@ -156,6 +158,34 @@ h3 a {
 }
 
 h3 a:hover {
+  color: #8bc6db;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 2em;
+  border: 2px solid #E9E9E9;
+  margin: .5em 0 .5em 0;
+}
+
+textarea {
+  min-height: 20em;
+}
+
+input[type="submit"], .button {
+  outline: none;
+  background: transparent;
+  border: 2px solid #E9E9E9;
+  text-align: center;
+  font-size: 1em;
+  color: #424652;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+
+input[type="submit"]:hover {
+  border: 2px solid #8bc6db;
   color: #8bc6db;
 }
 

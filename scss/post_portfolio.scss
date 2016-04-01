@@ -11,6 +11,38 @@
   }
 }
 
+//-----Posts Show
+
+#post_show_content header {
+    text-align:center;
+  }
+
+#post_show_content .date{
+  text-align:center;
+  font-size: .9em;
+  color: #9a9ad4;
+  margin: 0;
+}
+
+#post_show_content h6 {
+  margin: 0;
+}
+
+#share_box p {
+  text-align: center;
+  padding: 0 0 1em 0;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #424652;
+  font-size: .8em;
+}
+
+#share_box i:hover {
+  color: #8bc6db;
+  cursor: pointer;
+}
+
 //----- Pagination
 
 .pagination:before, .pagination:after {
@@ -30,7 +62,7 @@
 
 a, .previous_page, .current, .next_page {
     padding: .75em 1em;
-    margin: 0 .25em;
+    margin: 0 .5em;
     border-radius: .15em;
     line-height: 20px;
     text-decoration: none;
@@ -42,10 +74,16 @@ a, .previous_page, .current, .next_page {
   }
 
 
-  .current {
+  .a, .current {
     background: #8bc6db;
     color: #FFFFFF;
   }
+
+  .next_page:hover {
+    background: #8bc6db;
+    color: #FFFFFF;
+  }
+
 
   .disabled {
     color: #C0C0C0;
