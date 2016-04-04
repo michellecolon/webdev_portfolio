@@ -14,7 +14,7 @@ class ProjectsController < ApplicationController
     if @project.save
       redirect_to @project, notice: "You successfully saved that blog post!"
     else
-      render 'new'
+      render 'new', notice: "Oh no, your project didn't save :("
     end
   end
 
@@ -39,11 +39,12 @@ class ProjectsController < ApplicationController
 
   private
 
+  def project_params
+    params.require(:project).permit(:title, :content, :slug)
+  end
+
   def find_project
     @project = Project.friendly.find(params[:id])
   end
 
-  def project_params
-    params.require(:project).permit(:title, :content, :slug)
-  end
 end
